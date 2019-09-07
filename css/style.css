@@ -1,0 +1,302 @@
+* {
+  transition-duration: 250ms;
+  transition-delay: 10ms;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: black;
+  font-family: 'Century Gothic';
+  height: 100%;
+}
+
+.parallax-bg {
+  transition: initial;
+}
+
+
+/*
+Home Welcome
+============================================================
+*/
+
+
+#home-welcome {
+  background-image: url(../img/welcome.jpg);
+  background-size: cover;
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#home-welcome h1 {
+  text-align: center;
+  margin: auto;
+  margin-top: 150px;
+  padding: 30px 30px 30px 30px;
+  font-size: 50px;
+  letter-spacing: 8px;
+  color: white;
+  text-shadow: 0 1px 1px #303030;
+  text-transform: uppercase;
+}
+
+#home-welcome img {
+  padding-top: 10px;
+  display: block;
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+#home-welcome [class^="col-"] {
+  float: none;
+  display: inline-block;
+}
+
+#home-welcome h2 {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 90px 20px;
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+  text-shadow: 0 1px 1px #303030;
+}
+
+
+/*
+Home Papers
+============================================================
+*/
+
+
+#home-papers {
+  background: black;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+
+#home-papers h1 {
+  font-size: 72px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  line-height: 55px;
+  text-transform: uppercase;
+  padding: 80px 20px 0px 20px;
+  margin-bottom: 0;
+}
+
+#home-papers [class^="feature-"] {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  opacity: 0.85;
+}
+
+#home-papers [class^="feature-"]:hover {
+  opacity: 1;
+}
+
+#home-papers [class^="feature-"] img {
+  width: 100%;
+  height: auto;
+  border: solid;
+  border-color: white;
+}
+
+#home-papers [class^="feature-"]:hover img {
+  border-color: rgb(252, 180, 0);
+}
+
+#home-papers .feature-1 .description {
+  position: absolute;
+  bottom: 20px;
+  text-align: left;
+  text-shadow: 0 3px 3px #303030;
+  padding: 40px;
+}
+
+#home-papers .feature-1 h3 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#home-papers .feature-1 p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+#home-papers .feature-2 .description,
+#home-papers .feature-3 .description {
+  text-align: left;
+  margin-top: 10px;
+}
+
+#home-papers .feature-2 h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#home-papers .feature-2 p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#home-papers .feature-3 h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#home-papers .feature-3 p {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#home-papers .feature-2 h3::after,
+#home-papers .feature-3 h3::after {
+  content: '';
+  display: block;
+  background-color: rgb(252, 180, 0);
+  height: 2px;
+  width: 50%;
+  margin: 2px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  #home-papers .feature-3 .description {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #home-papers .feature-3 h3 {
+    font-size: 24px;
+  }
+
+  #home-papers .feature-3 p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #home-papers .feature-1 h3 {
+    font-size: 30px;
+  }
+
+  #home-papers .feature-1 p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+
+/*
+Home About
+============================================================
+*/
+
+#home-about {
+  background: rgb(230, 230, 230);
+}
+
+#about-box {
+  padding: 200px 100px;
+  max-width: 900px;
+  margin: auto;
+}
+
+#home-about h1 {
+  text-align: center;
+  letter-spacing: 1vw;
+  font-size: 6vw;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+}
+
+#home-about h1::after {
+  content: '';
+  display: block;
+  background-color: rgb(252, 180, 0);
+  height: 8px;
+  width: 100%;
+  margin: 0;
+  border-radius: 5px;
+}
+
+#home-about p {
+  font-size: 20px;
+  padding-top: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+#home-about a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  margin-top: 10px;
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#home-about a:hover {
+  color: rgb(252, 180, 0);
+}
+
+
+/*
+Home About
+============================================================
+*/
+
+#home-subscribe {
+  text-align: center;
+  color: white;
+  background-image: url(../img/horizon.jpg);
+  background-size: cover;
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+#subscribe-box {
+  padding: 200px 100px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+#home-subscribe h1 {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1vw;
+  font-size: 6vw;
+  text-transform: uppercase;
+
+}
+
+#home-subscribe p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+#home-subscribe input {
+  width: 90%;
+  height: 70px;
+  font-size: 30px;
+  color: black;
+  padding-left: 3%;
+  margin-top: 50px;
+}
